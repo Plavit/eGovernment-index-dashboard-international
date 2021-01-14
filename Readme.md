@@ -11,12 +11,13 @@ Different ¨branches contain different versions. There are currently two branche
 -  `master`, the original main working version, currently containing a czech mutation used for my diploma thesis
 -  `eGovernment-index-dashboard-international`, the version adapted for some English publications
 
-### This version (`eGovernment-index-dashboard`)
+### This version (`eGovernment-index-dashboard-international`)
+To be completed.
 
-It is currently only available in Czech, but is quite self explanatory.
 
+## Live example
 Check the app here:
-http://egov-t1.herokuapp.com/
+TBD
 
 ## Deployment
 To run locally:
@@ -25,3 +26,4 @@ To run locally:
 `npm install`
 2) Run the app with:
 `$ python app.py`
+

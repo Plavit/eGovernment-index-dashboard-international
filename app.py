@@ -94,11 +94,11 @@ app.layout = html.Div(
                 html.Div(
                     [
                         html.H3(
-                            "Přehled eGov indexů",
+                            "eGovernment index dashboard",
                             style={"margin-bottom": "0px"},
                         ),
                         html.H5(
-                            "Jednoduchý přehled hodnot z indexů eGovernmentu od OSN a EU",
+                            "A simple overview of UN and EU eGovernment benchmark indices",
                             style={"margin-top": "0px"}
                         ),
 
@@ -109,7 +109,7 @@ app.layout = html.Div(
                 html.Div(
                     [
                         html.A(
-                            html.Button("Kontaktovat autora", id="contact-button"),
+                            html.Button("Contact the author", id="contact-button"),
                             href="mailto:marek.szeles@eforce.cvut.cz",
                         )
                     ],
@@ -139,8 +139,8 @@ app.layout = html.Div(
                                         ),
                                         html.Div(
                                             [
-                                                html.H3("Index eGovernmentu OSN"),
-                                                html.P("Index eGovernmentu publikovaný Organizací spojených národů od roku 2001. Bližší popis metodologie bude přidán v budoucnu.")
+                                                html.H3("UN eGovernment index"),
+                                                html.P("This index is being pusblished by the United Nations since 2001. More detailed methodology information will be added")
                                             ]
                                         )
                                     ],
@@ -184,19 +184,19 @@ app.layout = html.Div(
                                             [
                                                 html.Div(
                                                     [html.H6(str(int(filtered_df.loc[filtered_df['Země'] == 'Česká republika']['Pořadí']))+". místo", id="un_rank_value"),
-                                                     html.P("Pořadí ČR", id="un_rank_text")],
+                                                     html.P("Rank of Czechia", id="un_rank_text")],
                                                     id="un_rank",
                                                     className="mini_container",
                                                 ),
                                                 html.Div(
                                                     [html.H6(str(np.round(float(filtered_df.loc[filtered_df['Země'] == 'Česká republika']['index eGov OSN']),3))+"", id="un_score_value"),
-                                                     html.P("Skóre ČR", id="un_score_text")],
+                                                     html.P("Score of Czechia", id="un_score_text")],
                                                     id="un_score",
                                                     className="mini_container",
                                                 ),
                                                 html.Div(
                                                     [html.H6(filtered_df.loc[filtered_df['Země'] == 'Česká republika']['Percentil']+"", id="un_percentile_value"),
-                                                     html.P("Percentil ČR", id="un_percentile_text")],
+                                                     html.P("Percentile of Czechia", id="un_percentile_text")],
                                                     id="un_percentile",
                                                     className="mini_container",
                                                 ),
@@ -207,7 +207,7 @@ app.layout = html.Div(
                                             children=[
                                                 html.H4(
                                                     id='top-un-title',
-                                                    children='TOP 15 zemí světa v roce ' + str(df['Year'].max())),
+                                                    children='TOP 15 countries in ' + str(df['Year'].max())),
                                                 html.Div(
                                                     id='top-un-table',
                                                     children=[
@@ -251,8 +251,8 @@ html.Div(
                                         ),
                                         html.Div(
                                             [
-                                                html.H3("Index eGovernmentu EU"),
-                                                html.P("Index eGovernmentu publikovaný Evropskou unií. Bližší popis metodologie bude přidán v budoucnu.")
+                                                html.H3("EU eGovernment index"),
+                                                html.P("This index is being pusblished by the European Union. More detailed methodology information will be added")
                                             ]
                                         )
                                     ],
@@ -294,19 +294,19 @@ html.Div(
                                             [
                                                 html.Div(
                                                     [html.H6(str(int(filtered_df_eu.loc[filtered_df_eu['Země'] == 'Česká republika']['Pořadí']))+". místo", id="eu_rank_value"),
-                                                     html.P("Pořadí ČR", id="eu_rank_text")],
+                                                     html.P("Rank of Czechia", id="eu_rank_text")],
                                                     id="eu_rank",
                                                     className="mini_container",
                                                 ),
                                                 html.Div(
                                                     [html.H6(str(np.round(float(filtered_df_eu.loc[filtered_df_eu['Země'] == 'Česká republika']['index eGov EU']),2)), id="eu_score_value"),
-                                                     html.P("Skóre ČR", id="eu_score_text")],
+                                                     html.P("Score of Czechia", id="eu_score_text")],
                                                     id="eu_score",
                                                     className="mini_container",
                                                 ),
                                                 html.Div(
                                                     [html.H6(filtered_df_eu.loc[filtered_df_eu['Země'] == 'Česká republika']['Percentil']+"", id="eu_percentile_value"),
-                                                     html.P("Percentil ČR", id="eu_percentile_text")],
+                                                     html.P("Percentile of Czechia", id="eu_percentile_text")],
                                                     id="eu_percentile",
                                                     className="mini_container",
                                                 ),
@@ -317,7 +317,7 @@ html.Div(
                                             children=[
                                                 html.H4(
                                                     id='top-eu-title',
-                                                    children='TOP 15 zemí EU v roce ' + str(dfeu['Year'].max())),
+                                                    children='TOP 15 countries in ' + str(dfeu['Year'].max())),
                                                 html.Div(
                                                     id='top-eu-table',
                                                     children=[
