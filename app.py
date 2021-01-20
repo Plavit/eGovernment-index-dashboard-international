@@ -63,7 +63,7 @@ def file_download_link(filename):
     return html.Div(
         [
             html.A(
-                html.Button("Stáhnout kompletní dataset: " + filename),
+                html.Button("Download the full dataset: " + filename),
                 href=location,
             )
         ],
@@ -82,7 +82,7 @@ app.layout = html.Div(
                 html.Div(
                     [
                         html.Img(
-                            src='assets/Logo-text.png',
+                            src='assets/Logo-text-en.png',
                             draggable='False',
                             id="logo",
                             height='auto',
@@ -369,7 +369,7 @@ def update_world_map(selected_year):
     filtered_df = filtered_df[['Pořadí', 'Czech name', 'UN eGov index', 'Percentil']]
     filtered_df = filtered_df.rename(columns={'Czech name': 'Země','UN eGov index': 'index eGov OSN'})
     return generate_world_map(df, selected_year), \
-           'TOP 15 zemí světa v roce ' + str(selected_year), \
+           'TOP 15 countries in ' + str(selected_year), \
            generate_table(filtered_df, 15), \
            str(int(filtered_df.loc[filtered_df['Země'] == 'Česká republika']['Pořadí']))+". místo", \
            str(np.round(float(filtered_df.loc[filtered_df['Země'] == 'Česká republika']['index eGov OSN']),3))+"", \
@@ -393,7 +393,7 @@ def update_europe_map(selected_year):
     filtered_df_eu = filtered_df_eu.rename(columns={'Czech name': 'Země', 'EU eGov index': 'index eGov EU'})
     filtered_df_eu = filtered_df_eu.sort_values('index eGov EU', ascending=False)
     return generate_europe_map(dfeu, selected_year), \
-           'TOP 15 zemí EU v roce ' + str(selected_year), \
+           'TOP 15 countries in ' + str(selected_year), \
            generate_table(filtered_df_eu, 15), \
            str(int(filtered_df_eu.loc[filtered_df_eu['Země'] == 'Česká republika']['Pořadí'])) + ". místo", \
            str(np.round(float(filtered_df_eu.loc[filtered_df_eu['Země'] == 'Česká republika']['index eGov EU']), 2)), \
