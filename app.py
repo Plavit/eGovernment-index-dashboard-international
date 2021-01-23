@@ -26,18 +26,18 @@ dfeu = pd.read_csv('data/{}'.format(DATA_EU))
 filtered_df = pd.DataFrame(df[df.Year == df['Year'].max()], columns=['English name', 'UN eGov index'])
 # Adding rank and percentile
 filtered_df['Rank'] = filtered_df['UN eGov index'].rank(method='max', ascending=False)
-filtered_df['Percentil'] = filtered_df['UN eGov index'].rank(pct=True)
-filtered_df['Percentil'] = (filtered_df['Percentil'] * 100).round(1).astype(str) + '%'
-filtered_df = filtered_df[['Rank', 'English name', 'UN eGov index', 'Percentil']]
-filtered_df = filtered_df.rename(columns={'English name': 'Země','UN eGov index': 'index eGov OSN'})
+filtered_df['Percentile'] = filtered_df['UN eGov index'].rank(pct=True)
+filtered_df['Percentile'] = (filtered_df['Percentile'] * 100).round(1).astype(str) + '%'
+filtered_df = filtered_df[['Rank', 'English name', 'UN eGov index', 'Percentile']]
+filtered_df = filtered_df.rename(columns={'English name': 'Country','UN eGov index': 'UN index value'})
 
 filtered_df_eu = pd.DataFrame(dfeu[dfeu.Year == dfeu['Year'].max()], columns=['English name', 'EU eGov index'])
 # Adding rank and percentile
 filtered_df_eu['Rank'] = filtered_df_eu['EU eGov index'].rank(method='max', ascending=False)
-filtered_df_eu['Percentil'] = filtered_df_eu['EU eGov index'].rank(pct=True)
-filtered_df_eu['Percentil'] = (filtered_df_eu['Percentil'] * 100).round(1).astype(str) + '%'
-filtered_df_eu = filtered_df_eu[['Rank', 'English name', 'EU eGov index', 'Percentil']]
-filtered_df_eu = filtered_df_eu.rename(columns={'English name': 'Země', 'EU eGov index': 'index eGov EU'})
+filtered_df_eu['Percentile'] = filtered_df_eu['EU eGov index'].rank(pct=True)
+filtered_df_eu['Percentile'] = (filtered_df_eu['Percentile'] * 100).round(1).astype(str) + '%'
+filtered_df_eu = filtered_df_eu[['Rank', 'English name', 'EU eGov index', 'Percentile']]
+filtered_df_eu = filtered_df_eu.rename(columns={'English name': 'Country', 'EU eGov index': 'EU index value'})
 
 # This is basically here only to use NumPy more than once ¯\_(ツ)_/¯
 df['log of index'] = np.round(np.log(df['UN eGov index']), 2) if not df['UN eGov index'].isnull else 0
@@ -365,10 +365,10 @@ app.title = 'eGovernment benchmark'
 def update_world_map(selected_year):
     filtered_df = pd.DataFrame(df[df.Year == selected_year], columns=['English name', 'UN eGov index'])
     filtered_df['Rank'] = filtered_df['UN eGov index'].rank(method='max', ascending=False)
-    filtered_df['Percentil'] = filtered_df['UN eGov index'].rank(pct=True)
-    filtered_df['Percentil'] = (filtered_df['Percentil'] * 100).round(1).astype(str) + '%'
-    filtered_df = filtered_df[['Rank', 'English name', 'UN eGov index', 'Percentil']]
-    filtered_df = filtered_df.rename(columns={'English name': 'Země','UN eGov index': 'index eGov OSN'})
+    filtered_df['Percentile'] = filtered_df['UN eGov index'].rank(pct=True)
+    filtered_df['Percentile'] = (filtered_df['Percentile'] * 100).round(1).astype(str) + '%'
+    filtered_df = filtered_df[['Rank', 'English name', 'UN eGov index', 'Percentile']]
+    filtered_df = filtered_df.rename(columns={'English name': 'Country','UN eGov index': 'UN index value'})
     return generate_world_map(df, selected_year), \
            'TOP 15 countries in ' + str(selected_year), \
            generate_table(filtered_df, 15), \
@@ -389,11 +389,11 @@ def update_world_map(selected_year):
 def update_europe_map(selected_year):
     filtered_df_eu = pd.DataFrame(dfeu[dfeu.Year == selected_year], columns=['English name', 'EU eGov index'])
     filtered_df_eu['Rank'] = filtered_df_eu['EU eGov index'].rank(method='max', ascending=False)
-    filtered_df_eu['Percentil'] = filtered_df_eu['EU eGov index'].rank(pct=True)
-    filtered_df_eu['Percentil'] = (filtered_df_eu['Percentil'] * 100).round(1).astype(str) + '%'
-    filtered_df_eu = filtered_df_eu[['Rank', 'English name', 'EU eGov index', 'Percentil']]
-    filtered_df_eu = filtered_df_eu.rename(columns={'English name': 'Země', 'EU eGov index': 'index eGov EU'})
-    filtered_df_eu = filtered_df_eu.sort_values('index eGov EU', ascending=False)
+    filtered_df_eu['Percentile'] = filtered_df_eu['EU eGov index'].rank(pct=True)
+    filtered_df_eu['Percentile'] = (filtered_df_eu['Percentile'] * 100).round(1).astype(str) + '%'
+    filtered_df_eu = filtered_df_eu[['Rank', 'English name', 'EU eGov index', 'Percentile']]
+    filtered_df_eu = filtered_df_eu.rename(columns={'English name': 'Country', 'EU eGov index': 'EU index value'})
+    filtered_df_eu = filtered_df_eu.sort_values('EU index value', ascending=False)
     return generate_europe_map(dfeu, selected_year), \
            'TOP 15 countries in ' + str(selected_year), \
            generate_table(filtered_df_eu, 15), \
