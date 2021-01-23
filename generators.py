@@ -58,7 +58,7 @@ def generate_world_map(df, year):
 
     fig.update_layout(
         height=1000,
-        title_text=' eGovernment index OSN z roku ' + str(year),
+        title_text='UN eGovernment index ' + str(year),
         geo=dict(
             showframe=False,
             showcoastlines=False,
@@ -69,7 +69,7 @@ def generate_world_map(df, year):
             y=0.01,
             xref='paper',
             yref='paper',
-            text='Zdroj: <a href="https://publicadministration.un.org/egovkb/">Organizace spojených národů</a>',
+            text='Source: <a href="https://publicadministration.un.org/egovkb/">United Nations</a>',
             showarrow=False
         )]
     )
@@ -120,7 +120,7 @@ def generate_europe_map(df, year):
 
     figeu.update_layout(
         height=1000,
-        title_text=' eGovernment index EU z roku ' + str(year),
+        title_text=' EU eGovernment index ' + str(year),
         geo=dict(
             showframe=False,
             showcoastlines=False,
@@ -131,8 +131,8 @@ def generate_europe_map(df, year):
             y=0.01,
             xref='paper',
             yref='paper',
-            text='Zdroj: <a href="https://ec.europa.eu/newsroom/dae/document.cfm?doc_id=62371">\
-                Evropská unie</a>',
+            text='Source: <a href="https://ec.europa.eu/newsroom/dae/document.cfm?doc_id=62371">\
+                European Union, European Commission</a>',
             showarrow=False
         )],
         margin={"r": 0, "t": 0, "l": 0, "b": 0},

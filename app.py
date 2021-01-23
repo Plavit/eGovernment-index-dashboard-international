@@ -155,7 +155,7 @@ app.layout = html.Div(
                                 html.Div(
                                     children=[
                                         html.Label(
-                                            html.H6('Výběr roku')
+                                            html.H6('Choose year for visualisation')
                                         ),
                                         dcc.Slider(
                                             id='year-slider',
@@ -268,7 +268,7 @@ html.Div(
                                 html.Div(
                                     children=[
                                         html.Label(
-                                            html.H6('Výběr roku')
+                                            html.H6('Choose year for visualisation')
                                         ),
                                         dcc.Slider(
                                             id='year-slider-2',
