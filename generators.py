@@ -35,7 +35,7 @@ def generate_world_map(df, year):
     fig = go.Figure(data=go.Choropleth(
         locations=filtered_df['Code'],
         z=filtered_df['UN eGov index'],
-        text=filtered_df['Czech name'],
+        text=filtered_df['English name'],
 
         colorscale=[[0.0, "rgb(0,150,50)"],
                     [0.3, "rgb(250,240,110)"],
@@ -94,7 +94,7 @@ def generate_europe_map(df, year):
     figeu = go.Figure(data=go.Choropleth(
         locations=filtered_df['Code'],
         z=filtered_df['EU eGov index'],
-        text=filtered_df['Czech name'],
+        text=filtered_df['English name'],
 
         colorscale=[[0.0, "rgb(0,150,50)"],
                     [0.3, "rgb(250,240,110)"],

@@ -11,7 +11,7 @@ Francie,France,FRA,0.879,2018,1
 Japonsko,Japan,JPN,0.8783,2018,0
 Spojené státy americké,United States of America,USA,0.8769,2018,0
 Německo,Germany,DEU,0.8765,2018,1
-Holandsko,Holland,NLD,0.8757,2018,1
+Nizozemí,The Netherlands,NLD,0.8757,2018,1
 Norsko,Norway,NOR,0.8557,2018,0
 Švýcarsko,Switzerland,CHE,0.852,2018,0
 Estonsko,Estonia,EST,0.8486,2018,1
@@ -49,7 +49,7 @@ Bulharsko,Bulgaria,BGR,0.7177,2018,1
 Malajsie,Malaysia,MYS,0.7174,2018,0
 Srbsko,Serbia,SRB,0.7155,2018,0
 Slovensko,Slovakia,SVK,0.7155,2018,1
-Katar,Catarrh,QAT,0.7132,2018,0
+Katar,Qatar,QAT,0.7132,2018,0
 Saudská arábie,Saudi Arabia,SAU,0.7119,2018,0
 Turecko,Turkey,TUR,0.7112,2018,0
 Česká republika,Czech Republic,CZE,0.7084,2018,1
@@ -188,7 +188,7 @@ Jemen,Yemen,YEM,0.2154,2018,0
 Guinea-Bissau,Guinea-Bissau,GNB,0.1887,2018,0
 Středoafrická republika,Central African Republic,CAF,0.1584,2018,0
 Eritrea,Eritrea,ERI,0.1337,2018,0
-Čad,CAD,TCD,0.1257,2018,0
+Čad,Chad,TCD,0.1257,2018,0
 Jižní Súdán,South Sudan,SSD,0.1214,2018,0
 Niger,Niger,NER,0.1095,2018,0
 Somálsko,Somalia,SOM,0.0566,2018,0
@@ -198,7 +198,7 @@ Jižní Korea,South Korea,KOR,0.8915,2016,0
 Singapur,Singapore,SGP,0.8828,2016,0
 Finsko,Finland,FIN,0.8817,2016,1
 Švédsko,Sweden,SWE,0.8704,2016,1
-Holandsko,Holland,NLD,0.8659,2016,1
+Nizozemí,The Netherlands,NLD,0.8659,2016,1
 Nový Zéland,New Zealand,NZL,0.8653,2016,0
 Dánsko,Denmark,DNK,0.851,2016,1
 Francie,France,FRA,0.8456,2016,1
@@ -239,7 +239,7 @@ Saudská arábie,Saudi Arabia,SAU,0.6822,2016,0
 Lotyšsko,Latvia,LVA,0.681,2016,1
 Maďarsko,Hungary,HUN,0.6745,2016,1
 Černá Hora,Montenegro,MNE,0.6733,2016,0
-Katar,Catarrh,QAT,0.6699,2016,0
+Katar,Qatar,QAT,0.6699,2016,0
 Bělorusko,Belarus,BLR,0.6625,2016,0
 Česká republika,Czech Republic,CZE,0.6454,2016,1
 Brazílie,Brazil,BRA,0.6377,2016,0
@@ -379,7 +379,7 @@ Mauritánie,Mauritania,MRT,0.1734,2016,0
 Burkina Faso,Burkina Faso,BFA,0.1598,2016,0
 Sierra Leone,Sierra Leone,SLE,0.1594,2016,0
 Džibutsko,Djibouti,DJI,0.1337,2016,0
-Čad,CAD,TCD,0.1256,2016,0
+Čad,Chad,TCD,0.1256,2016,0
 Guinea,Guinea,GIN,0.1226,2016,0
 Eritrea,Eritrea,ERI,0.0902,2016,0
 Středoafrická republika,Central African Republic,CAF,0.0789,2016,0
@@ -389,7 +389,7 @@ Jižní Korea,South Korea,KOR,0.9462,2014,0
 Austrálie,Australia,AUS,0.9103,2014,0
 Singapur,Singapore,SGP,0.9076,2014,0
 Francie,France,FRA,0.8938,2014,1
-Holandsko,Holland,NLD,0.8897,2014,1
+Nizozemí,The Netherlands,NLD,0.8897,2014,1
 Japonsko,Japan,JPN,0.8874,2014,0
 Spojené státy americké,United States of America,USA,0.8748,2014,0
 Spojené království,United Kingdom,GBR,0.8695,2014,1
@@ -428,7 +428,7 @@ Malta,Malta,MLT,0.6518,2014,1
 Slovinsko,Slovenia,SVN,0.6505,2014,1
 Polsko,Poland,POL,0.6482,2014,1
 Andorra,Andorra,AND,0.6426,2014,0
-Katar,Catarrh,QAT,0.6362,2014,0
+Katar,Qatar,QAT,0.6362,2014,0
 Černá Hora,Montenegro,MNE,0.6346,2014,0
 Argentina,Argentina,ARG,0.6306,2014,0
 Chorvatsko,Croatia,HRV,0.6282,2014,1
@@ -573,13 +573,13 @@ Jižní Súdán,South Sudan,SSD,0.1418,2014,0
 Sierra Leone,Sierra Leone,SLE,0.1329,2014,0
 Středoafrická republika,Central African Republic,CAF,0.1257,2014,0
 Papua-Nová Guinea,Papua New Guinea,PNG,0.1203,2014,0
-Čad,CAD,TCD,0.1076,2014,0
+Čad,Chad,TCD,0.1076,2014,0
 Guinea,Guinea,GIN,0.0954,2014,0
 Niger,Niger,NER,0.0946,2014,0
 Eritrea,Eritrea,ERI,0.0908,2014,0
 Somálsko,Somalia,SOM,0.0139,2014,0
 Jižní Korea,South Korea,KOR,0.9283,2012,0
-Holandsko,Holland,NLD,0.9125,2012,1
+Nizozemí,The Netherlands,NLD,0.9125,2012,1
 Spojené království,United Kingdom,GBR,0.896,2012,1
 Dánsko,Denmark,DNK,0.8889,2012,1
 Spojené státy americké,United States of America,USA,0.8687,2012,0
@@ -625,7 +625,7 @@ Barbados,Barbados,BRB,0.6566,2012,0
 Kypr,Cyprus,CYP,0.6508,2012,1
 Česká republika,Czech Republic,CZE,0.6491,2012,1
 Polsko,Poland,POL,0.6441,2012,1
-Katar,Catarrh,QAT,0.6405,2012,0
+Katar,Qatar,QAT,0.6405,2012,0
 Antigua a Barbuda,Antigua and Barbuda,ATG,0.6345,2012,0
 Uruguay,Uruguay,URY,0.6315,2012,0
 Srbsko,Serbia,SRB,0.6312,2012,0
@@ -766,7 +766,7 @@ Burkina Faso,Burkina Faso,BFA,0.1578,2012,0
 Sierra Leone,Sierra Leone,SLE,0.1557,2012,0
 Haiti,Haiti,HTI,0.1512,2012,0
 Niger,Niger,NER,0.1119,2012,0
-Čad,CAD,TCD,0.1092,2012,0
+Čad,Chad,TCD,0.1092,2012,0
 Somálsko,Somalia,SOM,0.064,2012,0
 Středoafrická republika,Central African Republic,CAF,0,2012,0
 Guinea,Guinea,GIN,0,2012,0
@@ -775,7 +775,7 @@ Jižní Korea,South Korea,KOR,0.8785,2010,0
 Spojené státy americké,United States of America,USA,0.851,2010,0
 Kanada,Canada,CAN,0.8448,2010,0
 Spojené království,United Kingdom,GBR,0.8147,2010,1
-Holandsko,Holland,NLD,0.8097,2010,1
+Nizozemí,The Netherlands,NLD,0.8097,2010,1
 Norsko,Norway,NOR,0.802,2010,0
 Dánsko,Denmark,DNK,0.7872,2010,1
 Austrálie,Australia,AUS,0.7863,2010,0
@@ -832,7 +832,7 @@ Saudská arábie,Saudi Arabia,SAU,0.5142,2010,0
 Rusko,Russia,RUS,0.5136,2010,0
 Černá Hora,Montenegro,MNE,0.5101,2010,0
 Brazílie,Brazil,BRA,0.5006,2010,0
-Katar,Catarrh,QAT,0.4928,2010,0
+Katar,Qatar,QAT,0.4928,2010,0
 Peru,Peru,PER,0.4923,2010,0
 Bělorusko,Belarus,BLR,0.49,2010,0
 Bahamské ostrovy,Bahamas,BHS,0.4871,2010,0
@@ -952,12 +952,12 @@ Burkina Faso,Burkina Faso,BFA,0.1587,2010,0
 Guinea-Bissau,Guinea-Bissau,GNB,0.1561,2010,0
 Guinea,Guinea,GIN,0.1426,2010,0
 Středoafrická republika,Central African Republic,CAF,0.1399,2010,0
-Čad,CAD,TCD,0.1235,2010,0
+Čad,Chad,TCD,0.1235,2010,0
 Niger,Niger,NER,0.1098,2010,0
 Švédsko,Sweden,SWE,0.915,2008,1
 Dánsko,Denmark,DNK,0.9125,2008,1
 Norsko,Norway,NOR,0.8916,2008,0
-Holandsko,Holland,NLD,0.8638,2008,1
+Nizozemí,The Netherlands,NLD,0.8638,2008,1
 Spojené státy americké,United States of America,USA,0.8635,2008,0
 Jižní Korea,South Korea,KOR,0.8318,2008,0
 Kanada,Canada,CAN,0.8178,2008,0
@@ -1005,7 +1005,7 @@ Uruguay,Uruguay,URY,0.5651,2008,0
 Lichtenštejnsko,Lichtenstein,LIE,0.5523,2008,0
 Jordán,Jordan,JOR,0.5475,2008,0
 Rumunsko,Romania,ROU,0.5395,2008,1
-Katar,Catarrh,QAT,0.5328,2008,0
+Katar,Qatar,QAT,0.5328,2008,0
 Trinidad a Tobago,Trinidad and Tobago,TTO,0.5316,2008,0
 Kolumbie,Colombia,COL,0.5315,2008,0
 Peru,Peru,PER,0.5248,2008,0
@@ -1137,7 +1137,7 @@ Sierra Leone,Sierra Leone,SLE,0.1472,2008,0
 Středoafrická republika,Central African Republic,CAF,0.1426,2008,0
 Guinea,Guinea,GIN,0.1409,2008,0
 Niger,Niger,NER,0.1147,2008,0
-Čad,CAD,TCD,0.1056,2008,0
+Čad,Chad,TCD,0.1056,2008,0
 Palau,Palau,PLW,0.0591,2008,0
 Mikronésie,Micronesia,FSM,0.0548,2008,0
 Tuvalu,Tuvalu,TUV,0.0431,2008,0
@@ -1157,7 +1157,7 @@ Kanada,Canada,CAN,0.8425,2005,0
 Finsko,Finland,FIN,0.8231,2005,1
 Norsko,Norway,NOR,0.822833333,2005,0
 Německo,Germany,DEU,0.804966667,2005,1
-Holandsko,Holland,NLD,0.802033333,2005,1
+Nizozemí,The Netherlands,NLD,0.802033333,2005,1
 Nový Zéland,New Zealand,NZL,0.798633333,2005,0
 Japonsko,Japan,JPN,0.780133333,2005,0
 Island,Iceland,ISL,0.779366667,2005,0
@@ -1207,7 +1207,7 @@ Jihoafrická republika,South African Republic,ZAF,0.507533333,2005,0
 Jamaica,Jamaica,JAM,0.506433333,2005,0
 Turecko,Turkey,TUR,0.495966667,2005,0
 Barbados,Barbados,BRB,0.492033333,2005,0
-Katar,Catarrh,QAT,0.4895,2005,0
+Katar,Qatar,QAT,0.4895,2005,0
 Seychely,Seychelles,SYC,0.488366667,2005,0
 Panama,Panama,PAN,0.482166667,2005,0
 Kazachstán,Kazakhstan,KAZ,0.481266667,2005,0
@@ -1314,7 +1314,7 @@ Vanuatu,Vanuatu,VUT,0.166433333,2005,0
 Burundi,Burundi,BDI,0.164266667,2005,0
 Sierra Leone,Sierra Leone,SLE,0.163933333,2005,0
 Afghánistán,Afghanistan,AFG,0.148966667,2005,0
-Čad,CAD,TCD,0.143333333,2005,0
+Čad,Chad,TCD,0.143333333,2005,0
 Guinea,Guinea,GIN,0.139566667,2005,0
 Etiopie,Ethiopia,ETH,0.136033333,2005,0
 Burkina Faso,Burkina Faso,BFA,0.1329,2005,0
@@ -1348,7 +1348,7 @@ Kanada,Canada,CAN,0.763333333,2003,0
 Finsko,Finland,FIN,0.761666667,2003,1
 Norsko,Norway,NOR,0.761333333,2003,0
 Německo,Germany,DEU,0.746333333,2003,1
-Holandsko,Holland,NLD,0.746333333,2003,1
+Nizozemí,The Netherlands,NLD,0.746333333,2003,1
 Nový Zéland,New Zealand,NZL,0.744,2003,0
 Japonsko,Japan,JPN,0.718333333,2003,0
 Island,Iceland,ISL,0.701666667,2003,0
@@ -1398,7 +1398,7 @@ Jihoafrická republika,South African Republic,ZAF,0.442666667,2003,0
 Jamaica,Jamaica,JAM,0.438,2003,0
 Turecko,Turkey,TUR,0.437333333,2003,0
 Barbados,Barbados,BRB,0.432333333,2003,0
-Katar,Catarrh,QAT,0.432,2003,0
+Katar,Qatar,QAT,0.432,2003,0
 Seychely,Seychelles,SYC,0.429333333,2003,0
 Panama,Panama,PAN,0.429,2003,0
 Kazachstán,Kazakhstan,KAZ,0.427333333,2003,0
@@ -1505,7 +1505,7 @@ Vanuatu,Vanuatu,VUT,0.172666667,2003,0
 Burundi,Burundi,BDI,0.172,2003,0
 Sierra Leone,Sierra Leone,SLE,0.170666667,2003,0
 Afghánistán,Afghanistan,AFG,0.170333333,2003,0
-Čad,CAD,TCD,0.165333333,2003,0
+Čad,Chad,TCD,0.165333333,2003,0
 Guinea,Guinea,GIN,0.161333333,2003,0
 Etiopie,Ethiopia,ETH,0.156666667,2003,0
 Burkina Faso,Burkina Faso,BFA,0.155666667,2003,0
@@ -1528,3 +1528,196 @@ Libye,Libya,LBY,0.008666667,2003,0
 Somálsko,Somalia,SOM,0.008666667,2003,0
 Turkmenistán,Turkmenistan,TKM,0.003666667,2003,0
 Zambie,Zambia,ZMB,0.001,2003,0
+Afghánistán,Afghanistan,AFG,0.3203,2020,0
+Albánie,Albania,ALB,0.7399,2020,0
+Alžírsko,Algeria,DZA,0.5173,2020,0
+Andorra,Andorra,AND,0.6881,2020,0
+Angola,Angola,AGO,0.3847,2020,0
+Antigua a Barbuda,Antigua and Barbuda,ATG,0.6055,2020,0
+Argentina,Argentina,ARG,0.8279,2020,0
+Arménie,Armenia,ARM,0.7136,2020,0
+Austrálie,Australia,AUS,0.9432,2020,0
+Rakousko,Austria,AUT,0.8914,2020,1
+Ázerbajdžán,Azerbaijan,AZE,0.71,2020,0
+Bahamské ostrovy,Bahamas,BHS,0.7017,2020,0
+Bahrain,Bahrain,BHR,0.8213,2020,0
+Bangladéš,Bangladesh,BGD,0.5189,2020,0
+Barbados,Barbados,BRB,0.7279,2020,0
+Bělorusko,Belarus,BLR,0.8084,2020,0
+Belgie,Belgium,BEL,0.8047,2020,1
+Belize,Belize,BLZ,0.4548,2020,0
+Benin,Benin,BEN,0.4039,2020,0
+Bhútán,Bhutan,BTN,0.5777,2020,0
+Bolívie,Bolivia,BOL,0.6129,2020,0
+Bosna a Hercegovina,Bosnia and Herzegovina,BIH,0.6372,2020,0
+Botswana,Botswana,BWA,0.5383,2020,0
+Brazílie,Brazil,BRA,0.7677,2020,0
+Brunej,Brunei,BRN,0.7389,2020,0
+Bulharsko,Bulgaria,BGR,0.798,2020,1
+Burkina,Burkina Faso,BFA,0.3558,2020,0
+Burundi,Burundi,BDI,0.3227,2020,0
+Kapverdy,Cape Verde,CPV,0.5604,2020,0
+Kambodža,Cambodia,KHM,0.5113,2020,0
+Kamerun,Cameroon,CMR,0.4325,2020,0
+Kanada,Canada,CAN,0.842,2020,0
+Středoafrická republika,Central African Republic,CAF,0.1404,2020,0
+Čad,Chad,TCD,0.1557,2020,0
+Chile,Chile,CHL,0.8259,2020,0
+Čína,China,CHN,0.7948,2020,0
+Kolumbie,Colombia,COL,0.7164,2020,0
+Komory,Comoros,COM,0.2799,2020,0
+Kongo,Congo,COG,0.3786,2020,0
+Kostarika,Costa Rica,CRI,0.7576,2020,0
+Pobřeží slonoviny,Ivory Coast,CIV,0.4457,2020,0
+Chorvatsko,Croatia,HRV,0.7745,2020,1
+Kuba,Cuba,CUB,0.4439,2020,0
+Kypr,Cyprus,CYP,0.8731,2020,1
+Česká republika,Czech Republic,CZE,0.8135,2020,1
+KLDR,North Korea,PRK,0.2235,2020,0
+Demokratická republika Kongo,Democratic Republic of the Congo,COD,0.258,2020,0
+Dánsko,Denmark,DNK,0.9758,2020,1
+Džibutsko,Djibouti,DJI,0.2728,2020,0
+Dominika,Dominica,DMA,0.6013,2020,0
+Dominikánská republika,Dominican Republic,DOM,0.6782,2020,0
+Ekvádor,Ecuador,ECU,0.7015,2020,0
+Egypt,Egypt,EGY,0.5527,2020,0
+El Salvador,El Salvador,SLV,0.5697,2020,0
+Rovníková Guinea,Equatorial Guinea,GNQ,0.2507,2020,0
+Eritrea,Eritrea,ERI,0.1292,2020,0
+Estonsko,Estonia,EST,0.9473,2020,1
+Eswatini,Eswatini,SWZ,0.4938,2020,0
+Etiopie,Ethiopia,ETH,0.274,2020,0
+Fiji,Fiji,FJI,0.6585,2020,0
+Finsko,Finland,FIN,0.9452,2020,1
+Francie,France,FRA,0.8718,2020,1
+Gabon,Gabon,GAB,0.5401,2020,0
+Gambie,Gambia,GMB,0.263,2020,0
+Gruzie,Georgia,GEO,0.7174,2020,0
+Německo,Germany,DEU,0.8524,2020,1
+Ghana,Ghana,GHA,0.596,2020,0
+Řecko,Greece,GRC,0.8021,2020,1
+Grenada,Grenada,GRD,0.5812,2020,0
+Guatemala,Guatemala,GTM,0.5155,2020,0
+Guinea,Guinea,GIN,0.2592,2020,0
+Guinea-Bissau,Guinea-Bissau,GNB,0.2316,2020,0
+Guyana,Guyana,GUY,0.4909,2020,0
+Haiti,Haiti,HTI,0.2723,2020,0
+Honduras,Honduras,HND,0.4486,2020,0
+Maďarsko,Hungary,HUN,0.7745,2020,1
+Island,Iceland,ISL,0.9101,2020,0
+Indie,India,IND,0.5964,2020,0
+Indonésie,Indonesia,IDN,0.6612,2020,0
+Írán,Iran,IRN,0.6593,2020,0
+Irák,Iraq,IRQ,0.436,2020,0
+Irsko,Ireland,IRL,0.8433,2020,1
+Izrael,Israel,ISR,0.8361,2020,0
+Itálie,Italy,ITA,0.8231,2020,1
+Jamaica,Jamaica,JAM,0.5392,2020,0
+Japonsko,Japan,JPN,0.8989,2020,0
+Jordán,Jordan,JOR,0.5309,2020,0
+Kazachstán,Kazakhstan,KAZ,0.8375,2020,0
+Keňa,Kenya,KEN,0.5326,2020,0
+Kiribati,Kiribati,KIR,0.432,2020,0
+Kuvajt,Kuwait,KWT,0.7913,2020,0
+Kyrgyzstán,Kyrgyzstan,KGZ,0.6749,2020,0
+Laos,Laos,LAO,0.3288,2020,0
+Lotyšsko,Latvia,LVA,0.7798,2020,1
+Libanon,Lebanon,LBN,0.4955,2020,0
+Lesotho,Lesotho,LSO,0.4593,2020,0
+Libérie,Liberia,LBR,0.2605,2020,0
+Libye,Libya,LBY,0.3743,2020,0
+Lichtenštejnsko,Lichtenstein,LIE,0.8359,2020,0
+Litva,Lithuania,LTU,0.8665,2020,1
+Lucembursko,Luxembourg,LUX,0.8272,2020,1
+Madagaskar,Madagascar,MDG,0.3095,2020,0
+Malawi,Malawi,MWI,0.348,2020,0
+Malajsie,Malaysia,MYS,0.7892,2020,0
+Maledivy,Maldives,MDV,0.574,2020,0
+Mali,Mali,MLI,0.3097,2020,0
+Malta,Malta,MLT,0.8547,2020,1
+Marshallovy ostrovy,Marshall Islands,MHL,0.4055,2020,0
+Mauritánie,Mauritania,MRT,0.282,2020,0
+Mauricius,Mauritius,MUS,0.7196,2020,0
+Mexiko,Mexico,MEX,0.7291,2020,0
+Mikronésie,Micronesia,FSM,0.3779,2020,0
+Monaco,Monaco,MCO,0.7177,2020,0
+Mongolsko,Mongolia,MNG,0.6497,2020,0
+Černá Hora,Montenegro,MNE,0.7006,2020,0
+Maroko,Morocco,MAR,0.5729,2020,0
+Mosambik,Mozambique,MOZ,0.3564,2020,0
+Myanmar,Myanmar,MMR,0.4316,2020,0
+Namibie,Namibia,NAM,0.5747,2020,0
+Nauru,Nauru,NRU,0.415,2020,0
+Nepál,Nepal,NPL,0.4699,2020,0
+Nizozemí,The Netherlands,NLD,0.9228,2020,1
+Nový Zéland,New Zealand,NZL,0.9339,2020,0
+Nikaragua,Nicaragua,NIC,0.5139,2020,0
+Niger,Niger,NER,0.1661,2020,0
+Nigérie,Nigeria,NGA,0.4406,2020,0
+Makedonie,Macedonia,MKD,0.7083,2020,0
+Norsko,Norway,NOR,0.9064,2020,0
+Omán,Oman,OMN,0.7749,2020,0
+Pákistán,Pakistan,PAK,0.4183,2020,0
+Palau,Palau,PLW,0.5109,2020,0
+Panama,Panama,PAN,0.6715,2020,0
+Papua-Nová Guinea,Papua New Guinea,PNG,0.2827,2020,0
+Paraguay,Paraguay,PRY,0.6487,2020,0
+Peru,Peru,PER,0.7083,2020,0
+Filipíny,Philippines,PHL,0.6892,2020,0
+Polsko,Poland,POL,0.8531,2020,1
+Portugalsko,Portugal,PRT,0.8255,2020,1
+Katar,Qatar,QAT,0.7173,2020,0
+Jižní Korea,South Korea,KOR,0.956,2020,0
+Moldavsko,Moldova,MDA,0.6881,2020,0
+Rumunsko,Romania,ROU,0.7605,2020,1
+Rusko,Russia,RUS,0.8244,2020,0
+Rwanda,Rwanda,RWA,0.4789,2020,0
+Svatý Kryštof a Nevis,Saint Kitts and Nevis,KNA,0.6352,2020,0
+Svatá Lucie,Saint Lucia,LCA,0.5444,2020,0
+Svatý Vincenc a Grenadiny,Saint Vincent and the Grenadines,VCT,0.5605,2020,0
+Samoa,Samoa,WSM,0.4219,2020,0
+San Marino,San Marino,SMR,0.6175,2020,0
+Svatý Tomáš a Princův ostrov,Sao Tome and Principe,STP,0.4074,2020,0
+Saudská arábie,Saudi Arabia,SAU,0.7991,2020,0
+Senegal,Senegal,SEN,0.421,2020,0
+Srbsko,Serbia,SRB,0.7474,2020,0
+Seychely,Seychelles,SYC,0.692,2020,0
+Sierra Leone,Sierra Leone,SLE,0.2931,2020,0
+Singapur,Singapore,SGP,0.915,2020,0
+Slovensko,Slovakia,SVK,0.7817,2020,1
+Slovinsko,Slovenia,SVN,0.8546,2020,1
+Šalamounovy ostrovy,Solomon Islands,SLB,0.3442,2020,0
+Somálsko,Somalia,SOM,0.1293,2020,0
+Jihoafrická republika,South African Republic,ZAF,0.6891,2020,0
+Jižní Súdán,South Sudan,SSD,0.0875,2020,0
+Španělsko,Spain,ESP,0.8801,2020,1
+Srí Lanka,Sri Lanka,LKA,0.6708,2020,0
+Sudan,Sudan,SDN,0.3154,2020,0
+Surinam,Suriname,SUR,0.5154,2020,0
+Švédsko,Sweden,SWE,0.9365,2020,1
+Švýcarsko,Switzerland,CHE,0.8907,2020,0
+Sýrie,Syria,SYR,0.4763,2020,0
+Tádžikistán,Tajikistan,TJK,0.4649,2020,0
+Thajsko,Thailand,THA,0.7565,2020,0
+Timor-Leste,Timor-Leste,TLS,0.4649,2020,0
+Togo,Togo,TGO,0.4302,2020,0
+Tonga,Tonga,TON,0.5616,2020,0
+Trinidad a Tobago,Trinidad and Tobago,TTO,0.6785,2020,0
+Tunisko,Tunisia,TUN,0.6526,2020,0
+Turecko,Turkey,TUR,0.7718,2020,0
+Turkmenistán,Turkmenistan,TKM,0.4034,2020,0
+Tuvalu,Tuvalu,TUV,0.4209,2020,0
+Uganda,Uganda,UGA,0.4499,2020,0
+Ukrajina,Ukraine,UKR,0.7119,2020,0
+Spojené arabské emiráty,United Arab Emirates,ARE,0.8555,2020,0
+Spojené království,United Kingdom,GBR,0.9358,2020,1
+Tanzanie,Tanzania,TZA,0.4206,2020,0
+Spojené státy americké,United States of America,USA,0.9297,2020,0
+Uruguay,Uruguay,URY,0.85,2020,0
+Uzbekistán,Uzbekistan,UZB,0.6665,2020,0
+Vanuatu,Vanuatu,VUT,0.4403,2020,0
+Venezuela,Venezuela,VEN,0.5268,2020,0
+Vietnam,Vietnam,VNM,0.6667,2020,0
+Jemen,Yemen,YEM,0.3045,2020,0
+Zambie,Zambia,ZMB,0.4242,2020,0
+Zimbabwe,Zimbabwe,ZWE,0.5019,2020,0

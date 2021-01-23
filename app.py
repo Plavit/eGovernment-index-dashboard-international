@@ -25,15 +25,15 @@ dfeu = pd.read_csv('data/{}'.format(DATA_EU))
 
 filtered_df = pd.DataFrame(df[df.Year == df['Year'].max()], columns=['English name', 'UN eGov index'])
 # Adding rank and percentile
-filtered_df['Rank'] = filtered_df['UN eGov index'].rank(method='max', ascending=False)
+filtered_df['Rank'] = filtered_df['UN eGov index'].rank(method='min', ascending=False)
 filtered_df['Percentile'] = filtered_df['UN eGov index'].rank(pct=True)
 filtered_df['Percentile'] = (filtered_df['Percentile'] * 100).round(1).astype(str) + '%'
 filtered_df = filtered_df[['Rank', 'English name', 'UN eGov index', 'Percentile']]
-filtered_df = filtered_df.rename(columns={'English name': 'Country','UN eGov index': 'UN index value'})
+filtered_df = filtered_df.rename(columns={'English name': 'Country', 'UN eGov index': 'UN index value'})
 
 filtered_df_eu = pd.DataFrame(dfeu[dfeu.Year == dfeu['Year'].max()], columns=['English name', 'EU eGov index'])
 # Adding rank and percentile
-filtered_df_eu['Rank'] = filtered_df_eu['EU eGov index'].rank(method='max', ascending=False)
+filtered_df_eu['Rank'] = filtered_df_eu['EU eGov index'].rank(method='min', ascending=False)
 filtered_df_eu['Percentile'] = filtered_df_eu['EU eGov index'].rank(pct=True)
 filtered_df_eu['Percentile'] = (filtered_df_eu['Percentile'] * 100).round(1).astype(str) + '%'
 filtered_df_eu = filtered_df_eu[['Rank', 'English name', 'EU eGov index', 'Percentile']]
@@ -140,7 +140,8 @@ app.layout = html.Div(
                                         html.Div(
                                             [
                                                 html.H3("UN eGovernment index"),
-                                                html.P("This index is being pusblished by the United Nations since 2001. More detailed methodology information will be added")
+                                                html.P(
+                                                    "This index is being pusblished by the United Nations since 2001. More detailed methodology information will be added")
                                             ]
                                         )
                                     ],
@@ -163,7 +164,7 @@ app.layout = html.Div(
                                             max=df['Year'].max(),
                                             value=df['Year'].max(),
                                             marks={
-                                                str(year): 'Rok {}'.format(year) if year == df['Year'].min() else str(
+                                                str(year): 'Year {}'.format(year) if year == df['Year'].min() else str(
                                                     year)
                                                 for year
                                                 in
@@ -235,7 +236,7 @@ app.layout = html.Div(
             className="row flex-display",
         ),
 
-html.Div(
+        html.Div(
             [
                 html.Div(
                     [
@@ -253,7 +254,8 @@ html.Div(
                                         html.Div(
                                             [
                                                 html.H3("EU eGovernment index"),
-                                                html.P("This index is being pusblished by the European Union. More detailed methodology information will be added")
+                                                html.P(
+                                                    "This index is being pusblished by the European Union. More detailed methodology information will be added")
                                             ]
                                         )
                                     ],
@@ -276,7 +278,7 @@ html.Div(
                                             max=dfeu['Year'].max(),
                                             value=dfeu['Year'].max(),
                                             marks={
-                                                str(year): 'Rok {}'.format(year) if year == df['Year'].min() else str(
+                                                str(year): 'Year {}'.format(year) if year == df['Year'].min() else str(
                                                     year) for year in
                                                 dfeu['Year'].unique()},
                                             step=None,
@@ -363,18 +365,20 @@ app.title = 'eGovernment benchmark'
      ],
     [Input('year-slider', 'value')])
 def update_world_map(selected_year):
-    filtered_df = pd.DataFrame(df[df.Year == selected_year], columns=['English name', 'UN eGov index'])
-    filtered_df['Rank'] = filtered_df['UN eGov index'].rank(method='max', ascending=False)
-    filtered_df['Percentile'] = filtered_df['UN eGov index'].rank(pct=True)
-    filtered_df['Percentile'] = (filtered_df['Percentile'] * 100).round(1).astype(str) + '%'
-    filtered_df = filtered_df[['Rank', 'English name', 'UN eGov index', 'Percentile']]
-    filtered_df = filtered_df.rename(columns={'English name': 'Country','UN eGov index': 'UN index value'})
+    filtered_df_update = pd.DataFrame(df[df.Year == selected_year], columns=['English name', 'UN eGov index'])
+    filtered_df_update['Rank'] = filtered_df_update['UN eGov index'].rank(method='min', ascending=False)
+    filtered_df_update['Percentile'] = filtered_df_update['UN eGov index'].rank(pct=True)
+    filtered_df_update['Percentile'] = (filtered_df_update['Percentile'] * 100).round(1).astype(str) + '%'
+    filtered_df_update = filtered_df_update[['Rank', 'English name', 'UN eGov index', 'Percentile']]
+    filtered_df_update = filtered_df_update.rename(
+        columns={'English name': 'Country', 'UN eGov index': 'UN index value'})
+    filtered_df_update = filtered_df_update.sort_values('UN index value', ascending=False)
     return generate_world_map(df, selected_year), \
            'TOP 15 countries in ' + str(selected_year), \
-           generate_table(filtered_df, 15), \
-           # str(int(filtered_df.loc[filtered_df['Země'] == 'Česká republika']['Pořadí']))+". místo", \
-           # str(np.round(float(filtered_df.loc[filtered_df['Země'] == 'Česká republika']['index eGov OSN']),3))+"", \
-           # filtered_df.loc[filtered_df['Země'] == 'Česká republika']['Percentil']
+           generate_table(filtered_df_update, 15), \
+        # str(int(filtered_df.loc[filtered_df['Země'] == 'Česká republika']['Pořadí']))+". místo", \
+    # str(np.round(float(filtered_df.loc[filtered_df['Země'] == 'Česká republika']['index eGov OSN']),3))+"", \
+    # filtered_df.loc[filtered_df['Země'] == 'Česká republika']['Percentil']
 
 
 @app.callback(
@@ -387,19 +391,20 @@ def update_world_map(selected_year):
      ],
     [Input('year-slider-2', 'value')])
 def update_europe_map(selected_year):
-    filtered_df_eu = pd.DataFrame(dfeu[dfeu.Year == selected_year], columns=['English name', 'EU eGov index'])
-    filtered_df_eu['Rank'] = filtered_df_eu['EU eGov index'].rank(method='max', ascending=False)
-    filtered_df_eu['Percentile'] = filtered_df_eu['EU eGov index'].rank(pct=True)
-    filtered_df_eu['Percentile'] = (filtered_df_eu['Percentile'] * 100).round(1).astype(str) + '%'
-    filtered_df_eu = filtered_df_eu[['Rank', 'English name', 'EU eGov index', 'Percentile']]
-    filtered_df_eu = filtered_df_eu.rename(columns={'English name': 'Country', 'EU eGov index': 'EU index value'})
-    filtered_df_eu = filtered_df_eu.sort_values('EU index value', ascending=False)
+    filtered_df_eu_update = pd.DataFrame(dfeu[dfeu.Year == selected_year], columns=['English name', 'EU eGov index'])
+    filtered_df_eu_update['Rank'] = filtered_df_eu_update['EU eGov index'].rank(method='min', ascending=False)
+    filtered_df_eu_update['Percentile'] = filtered_df_eu_update['EU eGov index'].rank(pct=True)
+    filtered_df_eu_update['Percentile'] = (filtered_df_eu_update['Percentile'] * 100).round(1).astype(str) + '%'
+    filtered_df_eu_update = filtered_df_eu_update[['Rank', 'English name', 'EU eGov index', 'Percentile']]
+    filtered_df_eu_update = filtered_df_eu_update.rename(
+        columns={'English name': 'Country', 'EU eGov index': 'EU index value'})
+    filtered_df_eu_update = filtered_df_eu_update.sort_values('EU index value', ascending=False)
     return generate_europe_map(dfeu, selected_year), \
            'TOP 15 countries in ' + str(selected_year), \
-           generate_table(filtered_df_eu, 15), \
-           # str(int(filtered_df_eu.loc[filtered_df_eu['Země'] == 'Česká republika']['Pořadí'])) + ". místo", \
-           # str(np.round(float(filtered_df_eu.loc[filtered_df_eu['Země'] == 'Česká republika']['index eGov EU']), 2)), \
-           # filtered_df_eu.loc[filtered_df_eu['Země'] == 'Česká republika']['Percentil']
+           generate_table(filtered_df_eu_update, 15), \
+        # str(int(filtered_df_eu.loc[filtered_df_eu['Země'] == 'Česká republika']['Pořadí'])) + ". místo", \
+    # str(np.round(float(filtered_df_eu.loc[filtered_df_eu['Země'] == 'Česká republika']['index eGov EU']), 2)), \
+    # filtered_df_eu.loc[filtered_df_eu['Země'] == 'Česká republika']['Percentil']
 
 
 if __name__ == '__main__':
