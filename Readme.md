@@ -13,11 +13,12 @@ Different ¨branches contain different versions. There are currently two branche
 
 ### This version (`eGovernment-index-dashboard-international`)
 To be completed.
-
+It is currently only available in Czech, but it will be changed to English soon.
 
 ## Live example
 Check the app here:
-TBD
+
+(TBD)
 
 ## Deployment
 To run locally:
