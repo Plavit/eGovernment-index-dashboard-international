@@ -117,7 +117,7 @@ app.layout = html.Div(
                 html.Div(
                     [
                         html.A(
-                            html.Button("Contact the author", id="contact-button"),
+                            html.Button("Contact the authors", id="contact-button"),
                             href="mailto:marek.szeles@eforce.cvut.cz",
                         )
                     ],
@@ -139,7 +139,8 @@ app.layout = html.Div(
                                 html.Div(
                                     children=[
                                         html.Img(
-                                            src="https://1000logos.net/wp-content/uploads/2018/01/united-nations-logo.png",
+                                            src=
+                                            "https://1000logos.net/wp-content/uploads/2018/01/united-nations-logo.png",
                                             draggable='False',
                                             id="logo_un",
                                             height=150,
@@ -147,9 +148,74 @@ app.layout = html.Div(
                                         ),
                                         html.Div(
                                             [
-                                                html.H3("UN eGovernment index"),
+                                                html.H3(
+                                                    "UN eGovernment index"
+                                                ),
                                                 html.P(
-                                                    "This index is being pusblished by the United Nations since 2001. More detailed methodology information will be added")
+                                                    "The e-Government Development Index (EGDI) is being published by "
+                                                    "the United Nations since 2001. It is a composite indicator "
+                                                    "involving three components – Online Service Index(OSI), "
+                                                    "Telecommunication Infrastructure Index (TII) "
+                                                    "and Human Capital Index (HCI). The final index is calculated "
+                                                    "using the following formula:"
+                                                ),
+                                                html.I("EGDI = ⅓ * (OSI+TII+HCI)"
+                                                       ),
+                                                html.H6(
+                                                    "The three components of the index are defined like so: "
+                                                ),
+                                                html.Ul(
+                                                    [
+                                                        html.Li(
+                                                            "OSI is the normalised score between 0 and 1, which"
+                                                            " is equal to the difference of the "
+                                                            "actual total score and the lowest total score divided by "
+                                                            "the range of total score values for all countries. "
+                                                        ),
+                                                        html.Li(
+                                                            [
+                                                                "Each country’s TII is the arithmetic average of",
+                                                                html.Ul(
+                                                                    [
+                                                                        html.Li(
+                                                                            "Estimated internet users per 100 inhabitants;",
+                                                                        ),
+                                                                        html.Li(
+                                                                            "Number of mobile subscribers per 100 inhabitants;"
+                                                                        ),
+                                                                        html.Li(
+                                                                            "Active mobile-broadband subscription;"
+                                                                        ),
+                                                                        html.Li(
+                                                                            "Number of fixed broadband subscriptions per 100 inhabitants."
+                                                                        )
+                                                                    ]
+                                                                )
+                                                            ]
+                                                        ),
+                                                        html.Li(
+                                                            [
+                                                                "Each country’s HCI is calculated using:",
+                                                                html.Ul(
+                                                                    [
+                                                                        html.Li(
+                                                                            "The adult literacy rate;",
+                                                                        ),
+                                                                        html.Li(
+                                                                            "The combined primary, secondary and tertiary gross enrolment ratio;"
+                                                                        ),
+                                                                        html.Li(
+                                                                            "Expected years of schooling;"
+                                                                        ),
+                                                                        html.Li(
+                                                                            "Average years of schooling."
+                                                                        )
+                                                                    ]
+                                                                )
+                                                            ]
+                                                        )
+                                                    ]
+                                                )
                                             ]
                                         )
                                     ],
