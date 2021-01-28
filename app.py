@@ -16,7 +16,7 @@ from generators import generate_table, generate_world_map, generate_europe_map
 
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 
-# Used dataset names
+# Used dataset version names
 DATA_UN = 'eGov-t5.csv'
 DATA_EU = 'eur-t3.csv'
 
@@ -38,9 +38,6 @@ filtered_df_eu['Percentile'] = filtered_df_eu['EU eGov index'].rank(pct=True)
 filtered_df_eu['Percentile'] = (filtered_df_eu['Percentile'] * 100).round(1).astype(str) + '%'
 filtered_df_eu = filtered_df_eu[['Rank', 'English name', 'EU eGov index', 'Percentile']]
 filtered_df_eu = filtered_df_eu.rename(columns={'English name': 'Country', 'EU eGov index': 'EU index value'})
-
-# This is basically here only to use NumPy more than once ¯\_(ツ)_/¯
-df['log of index'] = np.round(np.log(df['UN eGov index']), 2) if not df['UN eGov index'].isnull else 0
 
 # Normally, Dash creates its own Flask server internally. By creating our own,
 # we can create a route for downloading files directly:
@@ -86,10 +83,17 @@ app.layout = html.Div(
                             draggable='False',
                             id="logo",
                             height='auto',
-                            width=300,
+                            width=220,
+                        ),
+                        html.Img(
+                            src='http://www.cuspe.org/wp-content/uploads/2019/10/CJSP_logo.png',
+                            draggable='False',
+                            id="logo-CJSP",
+                            height='auto',
+                            width=160,
                         ),
                     ],
-                    className="two columns",
+                    className="three columns",
                 ),
                 html.Div(
                     [
@@ -99,6 +103,10 @@ app.layout = html.Div(
                         ),
                         html.H5(
                             "A simple overview of UN and EU eGovernment benchmark indices",
+                            style={"margin-top": "0px"}
+                        ),
+                        html.I(
+                            "Created as part of a paper submission for the Cambridge Journal of Science and Policy by Marek Szeles and Anshumaan Krishnan Ayyangar",
                             style={"margin-top": "0px"}
                         ),
 
@@ -113,7 +121,7 @@ app.layout = html.Div(
                             href="mailto:marek.szeles@eforce.cvut.cz",
                         )
                     ],
-                    className="two columns",
+                    className="three columns",
                     id="button",
                 ),
             ],
