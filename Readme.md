@@ -7,18 +7,16 @@
 A simple Python and Dash Plotly app that visualizes hard-to-process data from eGov indexes by the European Union and the United Nations. This project started off as a part of a semestral assignment at FIT, Czech Technical University and later used during further research at the Charles University in Prague and at the Univeristy of Cambridge
 
 ## Mutations
-Different ¨branches contain different versions. There are currently two branches:
+This project has been Different branches contain different versions. There are currently two forks:
 -  `master`, the original main working version, currently containing a czech mutation used for my diploma thesis
 -  `eGovernment-index-dashboard-international`, the version adapted for some English publications
 
 ### This version (`eGovernment-index-dashboard-international`)
-To be completed.
-It is currently only available in Czech, but it will be changed to English soon.
+The English version submitted as supporting material to the Cambridge Journal of Science and Policy. It contains data updated in early 2021, the EU benchmark up to 2019 and the UN benchmark up to 2020. Compared to the original version, the individual country spotlight was removed
 
 ## Live example
 Check the app here:
-
-(TBD)
+https://egov-dashboard-cambridge.herokuapp.com/
 
 ## Deployment
 To run locally:
