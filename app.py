@@ -107,7 +107,12 @@ app.layout = html.Div(
                         ),
                         html.I(
                             "Created as part of a paper submission for the Cambridge Journal of Science and Policy "
-                            "by Marek Szeles and Anshumaan Krishnan Ayyangar",
+                            "by Marek Szeles and Anshumaan Krishnan Ayyangar, expanding on ",
+                            html.A(
+                                "previous work done by the former",
+                                href="https://github.com/Plavit/eGovernment-index-dashboard",
+                                target="_blank"
+                            ),
                             style={"margin-top": "0px"}
                         ),
 
