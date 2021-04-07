@@ -192,7 +192,7 @@ app.layout = html.Div(
                                                                         ),
                                                                         html.Li(
                                                                             "Number of fixed broadband subscriptions "
-                                                                            "per 100 inhabitants."
+                                                                            "per 100 inhabitants"
                                                                         )
                                                                     ]
                                                                 )
@@ -207,7 +207,8 @@ app.layout = html.Div(
                                                                             "The adult literacy rate;",
                                                                         ),
                                                                         html.Li(
-                                                                            "The combined primary, secondary and tertiary gross enrolment ratio;"
+                                                                            "The combined primary, secondary and "
+                                                                            "tertiary gross enrolment ratio;"
                                                                         ),
                                                                         html.Li(
                                                                             "Expected years of schooling;"
@@ -219,6 +220,19 @@ app.layout = html.Div(
                                                                 )
                                                             ]
                                                         )
+                                                    ]
+                                                ),
+                                                html.P(
+                                                    [
+                                                        "More information about the methodology can be found in ",
+                                                        html.A(
+                                                            "documents published directly by the UN",
+                                                            href="https://www.un.org/development/desa/"
+                                                                 "publications/publication/"
+                                                                 "2020-united-nations-e-government-survey",
+                                                            target="_blank",
+                                                        ),
+                                                        "."
                                                     ]
                                                 )
                                             ]
@@ -335,7 +349,7 @@ app.layout = html.Div(
                                             [
                                                 html.H3("EU eGovernment index"),
                                                 html.P(
-                                                    "The e-Government Benchmark is being pusblished by "
+                                                    "The e-Government Benchmark is being published by "
                                                     "the European Union. It is based on a quantitative analysis "
                                                     "of a set of eight so-called life events. Each life event "
                                                     "consists of a user journey representing common public services "
@@ -435,6 +449,18 @@ app.layout = html.Div(
                                                     "for simplicity as they are not directly comparable with the UN "
                                                     "benchmark. "
                                                 ),
+                                                html.P(
+                                                    [
+                                                        "More information about the methodology can be found in ",
+                                                        html.A(
+                                                            "documents published directly by the EU",
+                                                            href="https://digital-strategy.ec.europa.eu/en/library/"
+                                                                 "egovernment-benchmark-2020-egovernment-works-people",
+                                                            target="_blank",
+                                                        ),
+                                                        "."
+                                                    ]
+                                                )
                                             ]
                                         )
                                     ],
