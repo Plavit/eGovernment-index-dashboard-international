@@ -106,7 +106,8 @@ app.layout = html.Div(
                             style={"margin-top": "0px"}
                         ),
                         html.I(
-                            "Created as part of a paper submission for the Cambridge Journal of Science and Policy by Marek Szeles and Anshumaan Krishnan Ayyangar",
+                            "Created as part of a paper submission for the Cambridge Journal of Science and Policy "
+                            "by Marek Szeles and Anshumaan Krishnan Ayyangar",
                             style={"margin-top": "0px"}
                         ),
 
@@ -178,16 +179,20 @@ app.layout = html.Div(
                                                                 html.Ul(
                                                                     [
                                                                         html.Li(
-                                                                            "Estimated internet users per 100 inhabitants;",
+                                                                            "Estimated internet users "
+                                                                            "per 100 inhabitants;",
                                                                         ),
                                                                         html.Li(
-                                                                            "Number of mobile subscribers per 100 inhabitants;"
+                                                                            "Number of mobile subscribers "
+                                                                            "per 100 inhabitants;"
                                                                         ),
                                                                         html.Li(
-                                                                            "Active mobile-broadband subscription;"
+                                                                            "Active mobile broadband subscriptions"
+                                                                            "per 100 inhabitants;"
                                                                         ),
                                                                         html.Li(
-                                                                            "Number of fixed broadband subscriptions per 100 inhabitants."
+                                                                            "Number of fixed broadband subscriptions "
+                                                                            "per 100 inhabitants."
                                                                         )
                                                                     ]
                                                                 )
@@ -319,7 +324,8 @@ app.layout = html.Div(
                                 html.Div(
                                     children=[
                                         html.Img(
-                                            src="https://ec.europa.eu/info/sites/info/themes/europa/images/svg/logo/logo--en.svg",
+                                            src="https://ec.europa.eu/info/sites/info/themes/europa/images/svg/logo/"
+                                                "logo--en.svg",
                                             draggable='False',
                                             id="logo_eu",
                                             height='auto',
