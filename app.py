@@ -159,7 +159,7 @@ app.layout = html.Div(
                                                     "and Human Capital Index (HCI). The final index is calculated "
                                                     "using the following formula:"
                                                 ),
-                                                html.I("EGDI = ⅓ * (OSI+TII+HCI)"
+                                                html.I("EGDI = ⅓ × (OSI+TII+HCI)"
                                                        ),
                                                 html.H6(
                                                     "The three components of the index are defined like so: "
